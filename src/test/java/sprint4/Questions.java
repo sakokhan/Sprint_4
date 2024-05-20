@@ -22,13 +22,7 @@ public class Questions {
     @Parameterized.Parameters
     public static Object[][] indexes(){
         return new Object[][]{
-                {0},
-                {1},
-                {2},
-                {4},
-                {5},
-                {6},
-                {7},
+                {0}, {1}, {2}, {4}, {5}, {6}, {7},
         };
 
     }

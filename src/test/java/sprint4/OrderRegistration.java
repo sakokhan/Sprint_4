@@ -9,14 +9,12 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import static java.time.temporal.ChronoUnit.SECONDS;
 
 @RunWith(Parameterized.class)
 public class OrderRegistration {
     private WebDriver webDriver;
-    private WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(5));
 
     @Parameterized.Parameter
     public String name;

@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.JavascriptExecutor;
 public class MainPage {
     private WebDriver webDriver;
+    //Адрес сайта
     private final String URL = "https://qa-scooter.praktikum-services.ru/";
     private final By cookieYes = By.xpath(".//button[text()='да все привыкли']");
     // верхняя кнопка "Заказать"
@@ -14,8 +15,7 @@ public class MainPage {
     private final By howMuchQuestion = By.id("accordion__heading-0");
     //Ответ Сколько это стоит? И как оплатить?
     private final By howMuchAnswer = By.xpath(".//p[contains(text() , 'Сутки — 400 рублей')]");
-    private final By howMuchQuestion1 = By.id("accordion__heading-1");
-    private final By howMuchAnswer1 = By.xpath(".//p[contains(text(), 'Пока что у нас так: один заказ — один самокат')]");
+
 
     public MainPage(WebDriver webDriver){this.webDriver = webDriver;}
     public void open(){webDriver.get(URL);}
